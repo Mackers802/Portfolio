@@ -1,3 +1,72 @@
 body{
-  background-color: antiquewhite;
+  background-image: url("https://images.pexels.com/photos/571169/pexels-photo-571169.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.navBarCont{
+  position: sticky;
+  background-color: none;
+  margin: 5px 5%;
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  background-color: none;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(195, 228, 239, 0.601);
+}
+
+.aboutCont{
+  display: inline-block;
+  width: 100vw;
+}
+
+.aboutHeader{
+  text-align: center;
+  font-size: xx-large;
+}
+
+.aboutDesc{
+  padding: 10px 50px;
+  margin: 0px 5%;
+  background-color: rgba(241, 200, 104, 0.313);
+  font-size: large;
+}
+
+.skillsHeader{
+  text-align: left;
+  justify-content: center;
+  margin: 40px 100px 20px;
+  font-size: large;
+}
+
+.skillsTypesCont{
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+}
+
+/* .projectCont{
+  background-color: darkturquoise;
+} */
+
+/* .resumeCont{
+  background-color: deeppink;
+} */
+
+.resumeHeader{
+  margin: 0px 50px;
+  /* background-color: dodgerblue;
+   */
+}
+
+/* .resumeImg{
+  background-color: dimgray;
+} */
