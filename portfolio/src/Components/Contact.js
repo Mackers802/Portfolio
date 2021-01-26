@@ -3,6 +3,9 @@ import React from "react";
 export default function Contact() {
   return (
     <div className="info">
+      <div className="contact">
+        <h1>Contact info</h1>
+      </div>
       <ul>
         <li>MacKenzie Yandow</li>
         <li>yandow.mackenzie@gmail.com</li>

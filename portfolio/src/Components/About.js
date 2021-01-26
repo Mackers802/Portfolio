@@ -21,7 +21,7 @@ export default function About() {
             <br></br>
             <br></br>I am originaly from the East Coast and have beome a bit of
             a West Coast Nomad. I currently live in Las Vegas, Nevada with my
-            wife and two Dogs!
+            wife and two Dogs! 
           </p>
         </div>
 

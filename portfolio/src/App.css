@@ -2,12 +2,14 @@ body{
   background-image: url("https://images.pexels.com/photos/571169/pexels-photo-571169.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
+  text-decoration: none;
 }
 
 .navBarCont{
   position: sticky;
-  background-color: none;
-  margin: 5px 5%;
+  background-color: rgba(125, 120, 120, 0.361);
+  padding: 5px 5%;
+  text-decoration: none;
 }
 
 .navBar{
@@ -15,12 +17,22 @@ body{
   justify-content: space-between;
   font-size: small;
   background-color: none;
+  text-decoration: none;
+}
+
+.contact{
+  text-align: center;
+  font-size: medium;
 }
 
 .info{
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(195, 228, 239, 0.601);
+  display: inline-block;
+  margin: 10px 0px;
+  padding: 10px;
+  height: 25vh;
+  width: 20vw;
+  justify-content: center;
+  background-color: rgba(195, 228, 239, 0.37);
 }
 
 .aboutCont{
@@ -30,27 +42,31 @@ body{
 
 .aboutHeader{
   text-align: center;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .aboutDesc{
   padding: 10px 50px;
   margin: 0px 5%;
-  background-color: rgba(241, 200, 104, 0.313);
+  background-color: rgba(209, 180, 101, 0.279);
   font-size: large;
 }
 
 .skillsHeader{
   text-align: left;
   justify-content: center;
-  margin: 40px 100px 20px;
-  font-size: large;
+  margin: 20px 100px;
+  font-size: medium;
 }
 
 .skillsTypesCont{
   display: flex;
-  align-content: space-between;
+  /* margin: -20px 0px 20px 0px; */
+  width: 80vw;
+  align-content: space-around;
   justify-content: center;
+  font-size: medium;
+  font-weight: 600
 }
 
 /* .projectCont{
