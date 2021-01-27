@@ -2,6 +2,13 @@ import React from "react";
 
 export default function Contact() {
   return (
+    <>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     <div className="info">
       <div className="contact">
         <h1>Contact info</h1>
@@ -30,5 +37,6 @@ export default function Contact() {
         </li>
       </ul>
     </div>
+    </>
   );
 }

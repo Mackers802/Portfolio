@@ -2,21 +2,18 @@ import React /*,{useState} */ from 'react'
 // import axios from "axios"
 
 export default function Projects() {
-    // const {state, setState} = useState([])
-
-    // function getProjects(){
-    //     axios.get("")
-    //     .then(res => 
-    //         setState(res.data)
-    //         )
-    //     .catch(err => console.log(err))
-    // }
     return (
         <>
             <div className="projectCont">
                 <h1>Projects</h1>
-                <h2>Coming soon to a browser near you</h2>
-                <iframe src="https://reviewthisrandommovie.netlify.app/" title="Random Movie Reviewer"></iframe>
+                    <h2>Created using React</h2>
+                <div className="iFrames">
+                    <iframe style={{width: "400px", height: "400px"}} src="https://reviewthisrandommovie.netlify.app/" title="Random Movie Reviewer"></iframe>
+                </div>
+                <div className="iFrames">
+                    <iframe style={{width: "400px", height: "400px"}} src="https://memeitup.netlify.app/" title="Meme Gen"></iframe>
+                </div>
+            
             </div>
         </>
     )

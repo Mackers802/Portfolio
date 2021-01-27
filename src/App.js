@@ -60,6 +60,8 @@ function App() {
         </Switch>
       </div>
       </div>
+      <br></br>
+      <br></br>
       <Contact />
     </>
   );
