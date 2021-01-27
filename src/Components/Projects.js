@@ -16,6 +16,7 @@ export default function Projects() {
             <div className="projectCont">
                 <h1>Projects</h1>
                 <h2>Coming soon to a browser near you</h2>
+                <iframe src="https://reviewthisrandommovie.netlify.app/" title="Random Movie Reviewer"></iframe>
             </div>
         </>
     )
