@@ -17,7 +17,7 @@ export default function Projects() {
                 <hr></hr>
                 <br></br>
                 <div>
-                <h2>Designed using HTML / CSS / Javascript projects</h2>
+                <h2>Designed using HTML / CSS & Javascript</h2>
                 <div className="iFrames">
                     <iframe style={{width: "320px", height: "425px", borderRadius: "30px", borderStyle: "groove", borderWidth: "8px", borderColor: " rgba(125, 120, 120, 0.361)" }} src="https://mariopestcontrol.netlify.app/" title="Mario Pest Control"></iframe>
                 </div>
