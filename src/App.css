@@ -84,8 +84,8 @@ body{
 
 .iFrames{
   display: inline-flex;
-  justify-content: center;
-  margin: 10px 5px;
+  align-items: space-around;
+  margin: 10px 3px;
   padding: 10px;
 }
 
