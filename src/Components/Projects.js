@@ -21,6 +21,9 @@ export default function Projects() {
                 <div className="iFrames">
                     <iframe style={{width: "320px", height: "425px", borderRadius: "30px", borderStyle: "groove", borderWidth: "8px", borderColor: " rgba(125, 120, 120, 0.361)" }} src="https://mariopestcontrol.netlify.app/" title="Mario Pest Control"></iframe>
                 </div>
+                <div className="iFrames">
+                    <iframe style={{width: "320px", height: "425px", borderRadius: "30px", borderStyle: "groove", borderWidth: "8px", borderColor: " rgba(125, 120, 120, 0.361)" }} src="https://vjstodolist.netlify.app/" title="Simple todo list"></iframe>
+                </div>
                 </div>
 
                 
