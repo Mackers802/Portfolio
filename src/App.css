@@ -85,7 +85,7 @@ body{
 .iFrames{
   display: inline-flex;
   justify-content: center;
-  margin: 15px;
+  margin: 10px 5px;
   padding: 10px;
 }
 

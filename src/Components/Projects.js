@@ -6,14 +6,17 @@ export default function Projects() {
         <>
             <div className="projectCont">
                 <h1>Projects</h1>
-                    <h2>Created using React</h2>
                 <div className="iFrames">
-                    <iframe style={{width: "400px", height: "400px"}} src="https://reviewthisrandommovie.netlify.app/" title="Random Movie Reviewer"></iframe>
+                    <iframe style={{width: "350px", height: "450px"}} src="https://memeitup.netlify.app/" title="Meme Gen"></iframe>
                 </div>
                 <div className="iFrames">
-                    <iframe style={{width: "400px", height: "400px"}} src="https://memeitup.netlify.app/" title="Meme Gen"></iframe>
+                    <iframe style={{width: "350px", height: "450px"}} src="https://reviewthisrandommovie.netlify.app/" title="Random Movie Reviewer"></iframe>
                 </div>
-            
+                {/* <div className="iFrames">
+                    <iframe style={{width: "325px", height: "450px"}} src="https://memeitup.netlify.app/" title="Meme Gen"></iframe>
+                </div> */}
+
+                
             </div>
         </>
     )
