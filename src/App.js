@@ -22,7 +22,7 @@ function App() {
         <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://docs.google.com/document/d/1Ej6zhUSUkv4Vc5ZdxVXM24pKeMST10ceIF4eVpLLIIA/edit"
+            href="https://docs.google.com/document/d/1iFfFJI_iqas9AxdTJL0PiIeHDEFjha-IVhbc5pf0cCM/edit#heading=h.n64fgzu3lwuy"
           >
             Resume
           </a>
