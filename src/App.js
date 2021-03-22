@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "./Components/About.js";
 import Projects from "./Components/Projects.js";
+import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCss3, faGit, faGithub, faHtml5, faJs, faLinkedin, faMdb, faNode, faReact } from "@fortawesome/free-brands-svg-icons"
-import "./App.css";
-import { faPaperPlane, faUser, faPrint, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faFileDownload, faUser, faAddressCard, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
 
@@ -18,37 +18,50 @@ function App() {
   const node = <FontAwesomeIcon icon={faNode}/>
   const mongoDb = <FontAwesomeIcon icon={faMdb}/>
   const person = <FontAwesomeIcon icon={faUser}/>
-  const resume = <FontAwesomeIcon icon={faPaperPlane}/>
-  const print = <FontAwesomeIcon icon={faPrint}/>
+  const resume = <FontAwesomeIcon icon={faFileDownload}/>
+  const contact = <FontAwesomeIcon icon={faAddressCard}/>
   const briefcase = <FontAwesomeIcon icon={faBriefcase}/>
   
+  const [ theme, setTheme ] = useState("light") 
+  function changeTheme(){
+    if(theme === "light"){
+      setTheme("dark")
+      console.log(theme)
+    } else if (theme === "dark"){
+      setTheme("light")
+      console.log(theme)
+    }
+  }
+
   return (
-    <div className="appCont">
-        <About
-          briefcase={briefcase} 
-          print={print} 
-          resume={resume} 
-          person={person} 
-          liIcon={liIcon} 
-          gitHub={gitHub} 
-          javascript={javascript} 
-          css={css} html={html} 
-          react={react} 
-          git={git} 
-          node={node} 
-          mongoDb={mongoDb}
-        />
-      
-        <Projects 
-          gitHub={gitHub} 
-          javascript={javascript} 
-          css={css} 
-          html={html} 
-          react={react} 
-          git={git} 
-          node={node} 
-          mongoDb={mongoDb}
-        />
+    <div className={theme === "light" ? "light" : "dark"}>
+      <div className="appCont">
+          <About
+            briefcase={briefcase} 
+            contact={contact} 
+            resume={resume} 
+            person={person} 
+            liIcon={liIcon} 
+            gitHub={gitHub} 
+            javascript={javascript} 
+            css={css} html={html} 
+            react={react} 
+            git={git} 
+            node={node} 
+            mongoDb={mongoDb}
+            changeTheme={changeTheme}
+          />
+          <Projects 
+            gitHub={gitHub} 
+            javascript={javascript} 
+            css={css} 
+            html={html} 
+            react={react} 
+            git={git} 
+            node={node} 
+            mongoDb={mongoDb}
+          />
+      </div>
     </div>
   );
 }

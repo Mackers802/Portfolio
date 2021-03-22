@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function About(props) {
-  const {print, briefcase, person, liIcon, gitHub, resume,
-    // javascript, css, html, react, es6, git, node, mongoDb, axios, express, 
+  const {contact, person, liIcon, gitHub, resume,
+    // briefcase, javascript, css, html, react, es6, git, node, mongoDb, axios, express, 
+  changeTheme
   } = props
 
   return (
@@ -11,6 +12,7 @@ export default function About(props) {
       <div className="headshot">
         <img src="./images/portfolio-headshot.jpg" alt="headshot" width="100" height="100"></img>
       </div>
+        <h2>{person} About Me</h2>
           <p>
             I am a Full-Stack Developer whos aim is to keep
             website developement simplistic, concise and to the point. I belive
@@ -28,13 +30,6 @@ export default function About(props) {
             wife and two Dogs! */}
           </p>
         <div className="navItems">
-          <h1>{person} About Me</h1>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.google.com/document/d/1Ej6zhUSUkv4Vc5ZdxVXM24pKeMST10ceIF4eVpLLIIA/edit"
-          ><h1>{print} Resume</h1></a>
-          <h1>{briefcase} Projects</h1>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -45,14 +40,21 @@ export default function About(props) {
           <a
             target="_blank"
             rel="noopener noreferrer"
+            href="https://docs.google.com/document/d/1Ej6zhUSUkv4Vc5ZdxVXM24pKeMST10ceIF4eVpLLIIA/edit"
+          ><h1>{resume} Resume</h1></a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/Mackers802"
           >
             <h1>{gitHub} Github</h1>
           </a>
-          
-          <h1>{resume} Contact</h1>
-          <button className="hireMeButton">Hire Me</button>
-          <button className="toggleButton">Toggle Icon</button>
+          {/* <h1>{briefcase} Projects</h1> */}
+          <h1>{contact} Contact</h1>
+
+          <button onClick={changeTheme}>
+            Change theme
+          </button>
         </div>
       </div>
   );

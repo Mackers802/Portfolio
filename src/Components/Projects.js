@@ -7,7 +7,9 @@ export default function Projects(props) {
     <div className="projectCont">
       <h1>Projects</h1>
       <h2>
-        Designed using {javascript}, {react}, {css}, {git}, {gitHub}, {node}
+        Designed using 
+        <br></br>
+        {javascript}, {react}, {css}, {git}, {gitHub}, {node}
       </h2>
       <div className="scroll">
         <a href="https://memeitup.netlify.app/">
@@ -22,7 +24,9 @@ export default function Projects(props) {
         <br></br>
         <hr></hr>
         <h2>
-          Designed using {javascript}, {html}, {css}, {gitHub}
+          Designed using 
+          <br></br>
+          {javascript}, {html}, {css}, {gitHub}
         </h2>
         <a href="https://mariopestcontrol.netlify.app/">
           <iframe
