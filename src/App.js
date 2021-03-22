@@ -21,8 +21,6 @@ function App() {
   const resume = <FontAwesomeIcon icon={faPaperPlane}/>
   const print = <FontAwesomeIcon icon={faPrint}/>
   const briefcase = <FontAwesomeIcon icon={faBriefcase}/>
-
-  // const portfolio = <FontAwesomeIcon icon={faBriefcase} />
   
   return (
     <div className="appCont">
