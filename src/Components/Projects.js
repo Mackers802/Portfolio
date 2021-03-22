@@ -1,33 +1,48 @@
-import React /*,{useState} */ from 'react'
+import React from "react";
 // import axios from "axios"
 
-export default function Projects() {
-    return (
-        <>
-            <div className="projectCont">
-                <h1>Projects</h1>
+export default function Projects(props) {
+  const { javascript, css, html, react, gitHub, git, node, /*mongoDb*/ } = props;
 
-            <h2>Designed using React</h2>
-                <div className="iFrames">
-                    <iframe style={{width: "320px", height: "425px", borderRadius: "30px", borderStyle: "doublegroove", borderWidth: "8px", borderColor: " rgba(125, 120, 120, 0.361)" }} src="https://memeitup.netlify.app/" title="Meme Gen"></iframe>
-                </div>
-                <div className="iFrames">
-                    <iframe style={{width: "320px", height: "425px", borderRadius: "30px", borderStyle: "groove", borderWidth: "8px", borderColor: " rgba(125, 120, 120, 0.361)" }} src="https://reviewthisrandommovie.netlify.app/" title="Random Movie Reviewer"></iframe>
-                </div>
-                <hr></hr>
-                <br></br>
-                <div>
-                <h2>Designed using HTML / CSS & Javascript</h2>
-                <div className="iFrames">
-                    <iframe style={{width: "320px", height: "425px", borderRadius: "30px", borderStyle: "groove", borderWidth: "8px", borderColor: " rgba(125, 120, 120, 0.361)" }} src="https://mariopestcontrol.netlify.app/" title="Mario Pest Control"></iframe>
-                </div>
-                <div className="iFrames">
-                    <iframe style={{width: "320px", height: "425px", borderRadius: "30px", borderStyle: "groove", borderWidth: "8px", borderColor: " rgba(125, 120, 120, 0.361)" }} src="https://vjstodolist.netlify.app/" title="Simple todo list"></iframe>
-                </div>
-                </div>
+  return (
+    <div className="projectCont">
+      <h1>Projects</h1>
+      <h2>
+        Designed using {javascript}, {react}, {css}, {git}, {gitHub}, {node}
+      </h2>
+      <div className="scroll">
+        <a href="https://memeitup.netlify.app/">
+          <iframe src="https://memeitup.netlify.app/" title="Meme Gen"></iframe>
+        </a>
+        {/* <iframe src="https://memeitup.netlify.app/" title="Meme Gen"></iframe>  */}
+        <a href="https://reviewthisrandommovie.netlify.app/">
+          <iframe
+            src="https://reviewthisrandommovie.netlify.app/"
+            title="Random Movie Reviewer"
+          ></iframe>
+        </a>
+        {/* <iframe src="https://reviewthisrandommovie.netlify.app/" title="Random Movie Reviewer"></iframe> */}
+        <br></br>
+        <hr></hr>
+        <h2>
+          Designed using {javascript}, {html}, {css}, {gitHub}{" "}
+        </h2>
+        <a href="https://mariopestcontrol.netlify.app/">
+          <iframe
+            src="https://mariopestcontrol.netlify.app/"
+            title="Mario Pest Control"
+          ></iframe>
+        </a>
+        {/* <iframe src="https://mariopestcontrol.netlify.app/" title="Mario Pest Control"></iframe> */}
 
-                
-            </div>
-        </>
-    )
+        <a href="https://vjstodolist.netlify.app/">
+          <iframe
+            src="https://vjstodolist.netlify.app/"
+            title="Simple todo list"
+          ></iframe>
+        </a>
+        {/* <iframe src="https://vjstodolist.netlify.app/" title="Simple todo list"></iframe> */}
+      </div>
+    </div>
+  );
 }

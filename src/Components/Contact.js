@@ -2,21 +2,11 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <div className="info">
-      <div className="contact">
-        <h1>Contact info</h1>
-      </div>
+    <div className="contact">
+        <h1>Contact</h1>
       <ul>
         <li>MacKenzie Yandow</li>
         <li>yandow.mackenzie@gmail.com</li>
-        <li>(802)-881-1990</li>
         <li>
         <a
             target="_blank"
@@ -36,7 +26,6 @@ export default function Contact() {
           </a>
         </li>
       </ul>
-    </div>
-    </>
+      </div>
   );
 }

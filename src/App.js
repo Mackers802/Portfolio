@@ -1,69 +1,57 @@
 import React from "react";
-import { Link, Switch, Route } from "react-router-dom";
 import About from "./Components/About.js";
 import Projects from "./Components/Projects.js";
-import Contact from "./Components/Contact.js";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCss3, faGit, faGithub, faHtml5, faJs, faLinkedin, faMdb, faNode, faReact } from "@fortawesome/free-brands-svg-icons"
 import "./App.css";
+import { faPaperPlane, faUser, faPrint, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
+
+  const liIcon = <FontAwesomeIcon icon={faLinkedin} />
+  const gitHub = <FontAwesomeIcon icon={faGithub} />
+  const javascript = <FontAwesomeIcon icon={faJs}/>
+  const css = <FontAwesomeIcon icon={faCss3}/>
+  const html = <FontAwesomeIcon icon={faHtml5}/>
+  const react = <FontAwesomeIcon icon={faReact} />
+  const git = <FontAwesomeIcon icon={faGit}/>
+  const node = <FontAwesomeIcon icon={faNode}/>
+  const mongoDb = <FontAwesomeIcon icon={faMdb}/>
+  const person = <FontAwesomeIcon icon={faUser}/>
+  const resume = <FontAwesomeIcon icon={faPaperPlane}/>
+  const print = <FontAwesomeIcon icon={faPrint}/>
+  const briefcase = <FontAwesomeIcon icon={faBriefcase}/>
+
+  // const portfolio = <FontAwesomeIcon icon={faBriefcase} />
   
   return (
-    <>
-    <div className="navBarCont">
-      <nav className="navBar">
-        <h1>
-          <Link to="/">About</Link>
-        </h1>
-        <h1>
-          <Link to="/Projects">Projects</Link>
-        </h1>
-        <h1>
-        <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://docs.google.com/document/d/1iFfFJI_iqas9AxdTJL0PiIeHDEFjha-IVhbc5pf0cCM/edit?usp=sharing"
-          >
-            Resume
-          </a>
-        </h1>
-        <h1>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/Mackers802"
-          >
-            GitHub
-          </a>
-        </h1>
-        <h1>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/mackyandow/"
-          >
-            LinkedIn
-          </a>
-        </h1>
-      </nav>
+    <div className="appCont">
+        <About
+          briefcase={briefcase} 
+          print={print} 
+          resume={resume} 
+          person={person} 
+          liIcon={liIcon} 
+          gitHub={gitHub} 
+          javascript={javascript} 
+          css={css} html={html} 
+          react={react} 
+          git={git} 
+          node={node} 
+          mongoDb={mongoDb}
+        />
+      
+        <Projects 
+          gitHub={gitHub} 
+          javascript={javascript} 
+          css={css} 
+          html={html} 
+          react={react} 
+          git={git} 
+          node={node} 
+          mongoDb={mongoDb}
+        />
     </div>
-
-      <div>
-      <div className="components">
-        <Switch>
-          <Route exact path="/">
-            <About />
-          </Route>
-          <Route path="/Projects">
-            <Projects />
-          </Route>
-        </Switch>
-      </div>
-      </div>
-      <br></br>
-      <br></br>
-      <Contact />
-    </>
   );
 }
 
