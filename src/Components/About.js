@@ -9,7 +9,7 @@ export default function About(props) {
       <div className="aboutCont">
         <h1>MacKenzie Yandow</h1>
       <div className="headshot">
-        <img src="https://images.squarespace-cdn.com/content/v1/53ed0e3ce4b0c296acaeae80/1584577511464-8FDZYWQVXUI1OBS4VTZP/ke17ZwdGBToddI8pDm48kD8Xroq_AX5Zgi3HGn2a5gd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQQ0iLpUJJ55dW55w_oZ6JvHnXlmx4oSoNzVwlPskgpsLIXfY3DEqu8fc08UsQJ-4w/Bonneville14082-Edit-DHWEB%2BNick%2BFerguson%2BDenver%2BBroncos%2BHeadshot%2BPhotography%2Bby%2BAaron%2BLucy%2BDenver%2BColorado%2BHeadshots%2BPhotographer.jpg?format=2500w" alt="headshot" width="100" height="100"></img>
+        <img src="./images/portfolio-headshot.jpg" alt="headshot" width="100" height="100"></img>
       </div>
           <p>
             I am a Full-Stack Developer whos aim is to keep
