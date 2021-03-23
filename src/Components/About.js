@@ -3,7 +3,7 @@ import React from "react";
 export default function About(props) {
   const {contact, person, liIcon, gitHub, resume,
     // briefcase, javascript, css, html, react, es6, git, node, mongoDb, axios, express, 
-  changeTheme
+    changeColor, toggleDarkLight
   } = props
 
   return (
@@ -51,10 +51,21 @@ export default function About(props) {
           </a>
           {/* <h1>{briefcase} Projects</h1> */}
           <h1>{contact} Contact</h1>
+          <label className="switch">
+            <input type="checkbox" onClick={toggleDarkLight} />
+          <span className="slider round"></span>
+          </label>
 
-          <button onClick={changeTheme}>
-            Change theme
-          </button>
+          {/* <div className="themeToggle" onClick={changeColor} > */}
+            {/* <button onClick={changeColor} value="White" style={{backgroundColor: "White"}}>White</button> */}
+            {/* <button onClick={changeColor} value="Dark" style={{backgroundColor: "Black", color: "white"}}>Black</button> */}
+          {/* </div> */}
+          <div className="colorChoice" onClick={changeColor}>
+            <button className="colorButton" value="Red" style={{backgroundColor: "Red"}}></button>
+            <button className="colorButton" value="Blue" style={{backgroundColor: "Blue"}}></button>
+            <button className="colorButton" value="Green" style={{backgroundColor: "Green"}}></button>
+            <button className="colorButton" value="Yellow" style={{backgroundColor: "Yellow"}}></button>
+          </div>
         </div>
       </div>
   );

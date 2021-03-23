@@ -6,7 +6,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCss3, faGit, faGithub, faHtml5, faJs, faLinkedin, faMdb, faNode, faReact } from "@fortawesome/free-brands-svg-icons"
 import { faFileDownload, faUser, faAddressCard, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
-function App() {
+function App(props) {
+
+  const [theme, setTheme] = useState("Light")
+
+    function toggleDarkLight(e){
+      if(theme === "Light"){
+        setTheme(theme? "Dark" : "Light")
+      } else if (theme === "Dark"){
+        setTheme(theme? "Light" : "Dark")
+      } else setTheme("Light")
+  }
+    
+    function changeColor(e){
+        setTheme(e.target.value)
+    }
 
   const liIcon = <FontAwesomeIcon icon={faLinkedin} />
   const gitHub = <FontAwesomeIcon icon={faGithub} />
@@ -21,20 +35,9 @@ function App() {
   const resume = <FontAwesomeIcon icon={faFileDownload}/>
   const contact = <FontAwesomeIcon icon={faAddressCard}/>
   const briefcase = <FontAwesomeIcon icon={faBriefcase}/>
-  
-  const [ theme, setTheme ] = useState("light") 
-  function changeTheme(){
-    if(theme === "light"){
-      setTheme("dark")
-      console.log(theme)
-    } else if (theme === "dark"){
-      setTheme("light")
-      console.log(theme)
-    }
-  }
 
   return (
-    <div className={theme === "light" ? "light" : "dark"}>
+    <div className={theme}>
       <div className="appCont">
           <About
             briefcase={briefcase} 
@@ -49,7 +52,9 @@ function App() {
             git={git} 
             node={node} 
             mongoDb={mongoDb}
-            changeTheme={changeTheme}
+            changeColor={changeColor}
+            toggleDarkLight={toggleDarkLight}
+            theme={theme}
           />
           <Projects 
             gitHub={gitHub} 
