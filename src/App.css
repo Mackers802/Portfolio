@@ -1,38 +1,79 @@
-.Light > .appCont{
+*{
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+/* 
+#settingTab{
+  position: sticky;
+  top: 800px;
+  left: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  width: 8rem;
+  height: 5rem;
+} */
+
+#toggle{
+  padding: .3rem;
+  margin: .3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#toggle > h3{
+  padding-bottom: .2rem;
+}
+
+.colorButton{
+  border: solid .2rem black;
+  width: 2rem;
+  height: 2rem;
+  margin: .2rem;
+}
+
+.Light > .aboutCont{
   background-color: rgb(255, 255, 255);
   color: black;
 }
 
-.Dark > .appCont{
+.Dark > .aboutCont{
   background-color: rgb(0, 0, 0);
   color: white;
 }
 
-.Green > .appCont{
-  background-color: rgb(74, 162, 45);
+.Green > .aboutCont{ 
+  background-color: rgb(95, 171, 70);
   color: black;
 }
 
-.Blue > .appCont{
+.Blue > .aboutCont{
   background-color: rgb(33, 212, 215);
   color: white;
 }
 
-.Red > .appCont{
-  background-color: rgb(255, 0, 0);
+.Red > .aboutCont{
+  background-color: rgb(208, 32, 32);
   color: black;
 }
 
-.Yellow > .appCont{
-  background-color: rgb(255, 225, 0);
+.Yellow > .aboutCont{
+  background-color: rgb(228, 207, 47);
   color: black;
 }
 
-.colorButton{
-  border: solid .1rem black;
-  margin: .2rem;
-  padding: .5rem;
+.Tan >.aboutCont{
+  background-color: rgb(228, 191, 128);
+  color: black;
 }
+
+.Purple >.aboutCont{
+  background-color: rgb(154, 89, 211);
+  color: black;
+}
+
 
 .switch {
   position: relative;

@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function About(props) {
-  const {contact, person, liIcon, gitHub, resume,
+  const {contact, person, liIcon, gitHub, resume
     // briefcase, javascript, css, html, react, es6, git, node, mongoDb, axios, express, 
-    changeColor, toggleDarkLight
   } = props
 
+  const initState = "light"
+const [theme, settheme] = useState(initState)
+
+function toggleDarkLight(e){
+  if(theme === "Light"){
+    settheme(theme? "Dark" : "Light")
+  } else if (theme === "Dark"){
+    settheme(theme? "Light" : "Dark")
+  } else settheme("Dark")
+}  
+function changeColor(e){
+    settheme(e.target.value)
+}
+
   return (
+    <div className={theme}>
       <div className="aboutCont">
         <h1>MacKenzie Yandow</h1>
       <div className="headshot">
@@ -51,22 +65,25 @@ export default function About(props) {
           </a>
           {/* <h1>{briefcase} Projects</h1> */}
           <h1>{contact} Contact</h1>
-          <label className="switch">
-            <input type="checkbox" onClick={toggleDarkLight} />
-          <span className="slider round"></span>
-          </label>
-
-          {/* <div className="themeToggle" onClick={changeColor} > */}
-            {/* <button onClick={changeColor} value="White" style={{backgroundColor: "White"}}>White</button> */}
-            {/* <button onClick={changeColor} value="Dark" style={{backgroundColor: "Black", color: "white"}}>Black</button> */}
-          {/* </div> */}
-          <div className="colorChoice" onClick={changeColor}>
-            <button className="colorButton" value="Red" style={{backgroundColor: "Red"}}></button>
-            <button className="colorButton" value="Blue" style={{backgroundColor: "Blue"}}></button>
-            <button className="colorButton" value="Green" style={{backgroundColor: "Green"}}></button>
-            <button className="colorButton" value="Yellow" style={{backgroundColor: "Yellow"}}></button>
+          <div id="toggle">
+            <h3>Dark Mode</h3>
+            <label className="switch">
+              <input type="checkbox" onClick={toggleDarkLight} />
+            <span className="slider round" style={{backgroundColor: {theme}}}></span>
+            </label>
           </div>
+       <div id="settingTab">
+     <div className="colorChoice" onClick={changeColor}>
+     <button className="colorButton" value="Red" style={{backgroundColor: "rgb(208, 32, 32)"}}></button>
+     <button className="colorButton" value="Blue" style={{backgroundColor: "rgb(33, 212, 215)"}}></button>
+     <button className="colorButton" value="Green" style={{backgroundColor: "rgb(95, 171, 70)"}}></button>
+     <button className="colorButton" value="Yellow" style={{backgroundColor: "rgb(228, 207, 47)"}}></button>
+     <button className="colorButton" value="Tan" style={{backgroundColor: "rgb(228, 191, 128)"}}></button>
+     <button className="colorButton" value="Purple" style={{backgroundColor: "rgb(154, 89, 211)"}}></button>
+     </div>
+   </div> 
         </div>
       </div>
+    </div>
   );
 }

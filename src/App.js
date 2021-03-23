@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import About from "./Components/About.js";
 import Projects from "./Components/Projects.js";
 import "./App.css";
@@ -7,20 +7,6 @@ import { faCss3, faGit, faGithub, faHtml5, faJs, faLinkedin, faMdb, faNode, faRe
 import { faFileDownload, faUser, faAddressCard, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 function App(props) {
-
-  const [theme, setTheme] = useState("Light")
-
-    function toggleDarkLight(e){
-      if(theme === "Light"){
-        setTheme(theme? "Dark" : "Light")
-      } else if (theme === "Dark"){
-        setTheme(theme? "Light" : "Dark")
-      } else setTheme("Light")
-  }
-    
-    function changeColor(e){
-        setTheme(e.target.value)
-    }
 
   const liIcon = <FontAwesomeIcon icon={faLinkedin} />
   const gitHub = <FontAwesomeIcon icon={faGithub} />
@@ -37,8 +23,7 @@ function App(props) {
   const briefcase = <FontAwesomeIcon icon={faBriefcase}/>
 
   return (
-    <div className={theme}>
-      <div className="appCont">
+    <div className="appCont">
           <About
             briefcase={briefcase} 
             contact={contact} 
@@ -52,9 +37,6 @@ function App(props) {
             git={git} 
             node={node} 
             mongoDb={mongoDb}
-            changeColor={changeColor}
-            toggleDarkLight={toggleDarkLight}
-            theme={theme}
           />
           <Projects 
             gitHub={gitHub} 
@@ -67,7 +49,7 @@ function App(props) {
             mongoDb={mongoDb}
           />
       </div>
-    </div>
+    // </div>
   );
 }
 
