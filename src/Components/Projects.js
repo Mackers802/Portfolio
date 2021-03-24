@@ -1,14 +1,11 @@
 import React from "react";
 
 export default function Projects(props) {
-  const { javascript, css, html, react, gitHub, git, node, theme, theme2 /*mongoDb*/ } = props;
-console.log("theme project", theme2)
+  const { javascript, css, html, react, gitHub, git, node/*mongoDb*/ } = props;
   return (
-    <div className={theme}>
-    <div className="projectCont">
-      <h1 style={{color: {theme2}}}>Projects</h1>
-      <h2 style={{color: {theme2}}}>
-        Designed using 
+    <div id="projectCont">
+      <h1>Projects</h1>
+      <h2 >Designed using 
         <br></br>
         {javascript}, {react}, {css}, {git}, {gitHub}, {node}
       </h2>
@@ -24,8 +21,7 @@ console.log("theme project", theme2)
         </a>
         <br></br>
         <hr></hr>
-        <h2 style={{color: {theme2}}}>
-          Designed using 
+        <h2>Designed using 
           <br></br>
           {javascript}, {html}, {css}, {gitHub}
         </h2>
@@ -42,7 +38,6 @@ console.log("theme project", theme2)
           ></iframe>
         </a>
       </div>
-    </div>
     </div>
   );
 }

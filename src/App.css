@@ -28,6 +28,7 @@
 }
 
 .colorChoice{
+  width: 10.5rem;
   padding: 0rem;
   margin: 0rem;
 }
@@ -39,60 +40,82 @@
   margin: .2rem;
 }
 
-/* .Grey > .appCont{
+ .Grey > #appCont{
   margin: 0;
   padding: 0;
   background-color: rgb(255, 255, 255);
   color: black;
-} */
+} 
 
-.Dark > .appCont{
+.Dark > #appCont{
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
   color: white;
 }
 
-.Light > .aboutCont{
+.Light > #aboutCont{
+  height: 100vh;
   background-color: rgb(187, 187, 187);
   color: black;
+  overflow-y: scroll;
 }
 
-.Grey > .aboutCont{
+.Grey > #aboutCont{
+  height: 100vh;
   background-color: rgb(187, 187, 187);
   color: black;
+  overflow-y: scroll;
 }
 
-.Green > .aboutCont{ 
+.Orange > #aboutCont{
+  height: 100vh;
+  background-color: rgb(247, 124, 75);
+  color: black;
+  overflow-y: scroll;
+}
+
+.Green > #aboutCont{ 
+  height: 100vh;
   background-color: rgb(95, 171, 70);
   color: black;
+  overflow-y: scroll;
 }
 
-.Blue > .aboutCont{
+.Blue > #aboutCont{
+  height: 100vh;
   background-color: rgb(33, 212, 215);
   color: white;
+  overflow-y: scroll;
 }
 
-.Red > .aboutCont{
+.Red > #aboutCont{
+  height: 100vh;
   background-color: rgb(208, 32, 32);
   color: black;
+  overflow-y: scroll;
 }
 
-.Yellow > .aboutCont{
+.Yellow > #aboutCont{
+  height: 100vh;
   background-color: rgb(228, 207, 47);
   color: black;
+  overflow-y: scroll;
 }
 
-.Tan >.aboutCont{
+.Tan >#aboutCont{
+  height: 100vh;
   background-color: rgb(228, 191, 128);
   color: black;
+  overflow-y: scroll;
 }
 
-.Purple >.aboutCont{
+.Purple >#aboutCont{
+  height: 100vh;
   background-color: rgb(154, 89, 211);
   color: black;
+  overflow-y: scroll;
 }
-
 
 .switch {
   position: relative;
@@ -153,7 +176,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.appCont {
+#appCont {
   margin: 0;
   padding: 0;
   display: grid;
@@ -164,11 +187,10 @@ input:checked + .slider:before {
   /* background-color: aqua; */
 }
 
-.Light > .projectCont {
+#projectCont {
   grid-column: 2 / 3;
-  height: 97vh;
+  height: 100vh;
   padding: .5rem;
-  margin-bottom: 2rem;
   /* border-left: 5px solid black; */
   justify-content: center;
   align-items: center;
@@ -176,22 +198,10 @@ input:checked + .slider:before {
   overflow-y: scroll;
 }
 
-.Dark > .projectCont {
-  grid-column: 2 / 3;
-  height: 97vh;
-  padding: .5rem;
-  margin-bottom: 2rem;
-  /* border-left: 5px solid white; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow-y: scroll;
-}
-
-.projectCont > h1 {
+#projectCont > h1 {
   padding-top: 1.5rem;
 }
-.projectCont > h2 {
+#projectCont > h2 {
   padding: 1rem 0rem;
 }
 
@@ -207,42 +217,43 @@ a > iframe{
   border-color: rgba(125, 120, 120, 0.361);
   margin: 5px;
 }
-
-.aboutCont {
+/* 
+#aboutCont {
   grid-column: 1 / 2;
-  height: 100%;
+  height: 90vhvh;
   padding: .5rem;
-  margin-bottom: 2rem;
   overflow-y: scroll;
-}
+} */
 
-.aboutCont > h1 {
+#aboutCont > h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-top: 1.25rem;
+  padding-bottom: 1.5rem;
 }
 
-.aboutCont > h2 {
+#aboutCont > h2 {
   text-align: left;
   padding-top: .5rem;
+  padding-bottom: .5rem;
   margin: -0rem .5rem;
   font-size: large;
   margin-top: 1.5rem;
 }
 
-.aboutCont > .headshot {
+#aboutCont > .headshot {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.aboutCont > .headshot > img {
+#aboutCont > .headshot > img {
   border-radius: 50%;
 }
 
-.aboutCont > p {
+#aboutCont > p {
   padding: 0px 2rem;
   font-size: large;
 }

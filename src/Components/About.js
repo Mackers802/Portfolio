@@ -4,10 +4,11 @@ export default function About(props) {
   const {contact, person, liIcon, gitHub, resume, theme2, toggleDarkLight, changeColor, theme
     // briefcase, javascript, css, html, react, es6, git, node, mongoDb, axios, express, 
   } = props
-
+console.log("t2", theme2)
+console.log("t1", theme)
   return (
     <div className={theme2}>
-      <div className="aboutCont">
+      <div id="aboutCont">
         <h1>MacKenzie Yandow</h1>
       <div className="headshot">
         <img src="./images/portfolio-headshot.jpg" alt="headshot" width="100" height="100"></img>
@@ -60,6 +61,7 @@ export default function About(props) {
        {/* <div id="settingTab"> */}
      <div className="colorChoice">
      <button className="colorButton" onClick={changeColor} value="Grey" style={{backgroundColor: "rgb(187, 187, 187)"}}></button>
+     <button className="colorButton" onClick={changeColor} value="Orange" style={{backgroundColor: "rgb(247, 124, 75)"}}></button>
      <button className="colorButton" onClick={changeColor} value="Red" style={{backgroundColor: "rgb(208, 32, 32)"}}></button>
      <button className="colorButton" onClick={changeColor} value="Blue" style={{backgroundColor: "rgb(33, 212, 215)"}}></button>
      <button className="colorButton" onClick={changeColor} value="Green" style={{backgroundColor: "rgb(95, 171, 70)"}}></button>

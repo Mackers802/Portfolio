@@ -51,7 +51,7 @@ function changeColor(e){
 
   return (
     <div className={theme}>
-      <div className="appCont">
+      <div id="appCont">
           <About
             briefcase={briefcase} 
             contact={contact} 
