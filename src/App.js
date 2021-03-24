@@ -23,8 +23,9 @@ function App(props) {
   const briefcase = <FontAwesomeIcon icon={faBriefcase}/>
 
   const initState = "Light"
+  const initState2 = "Grey"
   const [theme, setTheme] = useState(initState)
-  const [theme2, setTheme2 ] = useState()
+  const [theme2, setTheme2 ] = useState(initState2)
 
 function toggleDarkLight(e){
   if(theme === "Light"){
@@ -78,6 +79,7 @@ function changeColor(e){
             git={git} 
             node={node} 
             mongoDb={mongoDb}
+            theme={theme}
           />
       </div>
     </div>

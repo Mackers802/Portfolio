@@ -27,6 +27,11 @@
   padding-bottom: .2rem;
 }
 
+.colorChoice{
+  padding: 0rem;
+  margin: 0rem;
+}
+
 .colorButton{
   border: solid .2rem black;
   width: 2rem;
@@ -34,14 +39,28 @@
   margin: .2rem;
 }
 
-.Light > .appCont{
+/* .Grey > .appCont{
+  margin: 0;
+  padding: 0;
   background-color: rgb(255, 255, 255);
+  color: black;
+} */
+
+.Dark > .appCont{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.Light > .aboutCont{
+  background-color: rgb(187, 187, 187);
   color: black;
 }
 
-.Dark > .appCont{
-  background-color: rgb(0, 0, 0);
-  color: white;
+.Grey > .aboutCont{
+  background-color: rgb(187, 187, 187);
+  color: black;
 }
 
 .Green > .aboutCont{ 
@@ -135,22 +154,34 @@ input:checked + .slider:before {
 }
 
 .appCont {
+  margin: 0;
+  padding: 0;
   display: grid;
-  height: 97vh;
+  height: 100vh;
   grid-template-columns: 1fr 2fr;
-  border: solid 5px black;
-  margin: 0.5rem;
+  /* border: solid 5px black; */
+  /* margin: 0.5rem; */
   /* background-color: aqua; */
 }
 
-
-
-.projectCont {
+.Light > .projectCont {
   grid-column: 2 / 3;
-  height: 95vh;
+  height: 97vh;
   padding: .5rem;
   margin-bottom: 2rem;
-  border-left: 5px solid black;
+  /* border-left: 5px solid black; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.Dark > .projectCont {
+  grid-column: 2 / 3;
+  height: 97vh;
+  padding: .5rem;
+  margin-bottom: 2rem;
+  /* border-left: 5px solid white; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -179,7 +210,7 @@ a > iframe{
 
 .aboutCont {
   grid-column: 1 / 2;
-  height: 95vh;
+  height: 100%;
   padding: .5rem;
   margin-bottom: 2rem;
   overflow-y: scroll;

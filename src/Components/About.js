@@ -57,18 +57,19 @@ export default function About(props) {
             <span className="slider round"></span>
             </label>
           </div>
-       <div id="settingTab">
-     <div className="colorChoice" onClick={changeColor}>
-     <button className="colorButton" value="Red" style={{backgroundColor: "rgb(208, 32, 32)"}}></button>
-     <button className="colorButton" value="Blue" style={{backgroundColor: "rgb(33, 212, 215)"}}></button>
-     <button className="colorButton" value="Green" style={{backgroundColor: "rgb(95, 171, 70)"}}></button>
-     <button className="colorButton" value="Yellow" style={{backgroundColor: "rgb(228, 207, 47)"}}></button>
-     <button className="colorButton" value="Tan" style={{backgroundColor: "rgb(228, 191, 128)"}}></button>
-     <button className="colorButton" value="Purple" style={{backgroundColor: "rgb(154, 89, 211)"}}></button>
+       {/* <div id="settingTab"> */}
+     <div className="colorChoice">
+     <button className="colorButton" onClick={changeColor} value="Grey" style={{backgroundColor: "rgb(187, 187, 187)"}}></button>
+     <button className="colorButton" onClick={changeColor} value="Red" style={{backgroundColor: "rgb(208, 32, 32)"}}></button>
+     <button className="colorButton" onClick={changeColor} value="Blue" style={{backgroundColor: "rgb(33, 212, 215)"}}></button>
+     <button className="colorButton" onClick={changeColor} value="Green" style={{backgroundColor: "rgb(95, 171, 70)"}}></button>
+     <button className="colorButton" onClick={changeColor} value="Yellow" style={{backgroundColor: "rgb(228, 207, 47)"}}></button>
+     <button className="colorButton" onClick={changeColor} value="Tan" style={{backgroundColor: "rgb(228, 191, 128)"}}></button>
+     <button className="colorButton" onClick={changeColor} value="Purple" style={{backgroundColor: "rgb(154, 89, 211)"}}></button>
      </div>
    </div> 
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
