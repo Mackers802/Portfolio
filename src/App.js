@@ -48,6 +48,7 @@ function changeColor(e){
     setTheme2(e.target.value)
   }
 }
+console.log("app theme", theme)
 
   return (
     <div className={theme}>

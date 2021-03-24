@@ -40,14 +40,25 @@
   margin: .2rem;
 }
 
- .Grey > #appCont{
+/* #appCont {
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+} */
+
+.Light > #appCont{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0;
+  padding: 0;
+  background-color: white;
   color: black;
 } 
 
 .Dark > #appCont{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
@@ -59,6 +70,17 @@
   background-color: rgb(187, 187, 187);
   color: black;
   overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
+}
+
+.Dark > #aboutCont{
+  height: 100vh;
+  background-color: rgb(187, 187, 187);
+  color: black;
+  overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
 }
 
 .Grey > #aboutCont{
@@ -66,6 +88,8 @@
   background-color: rgb(187, 187, 187);
   color: black;
   overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
 }
 
 .Orange > #aboutCont{
@@ -73,6 +97,8 @@
   background-color: rgb(247, 124, 75);
   color: black;
   overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
 }
 
 .Green > #aboutCont{ 
@@ -80,6 +106,8 @@
   background-color: rgb(95, 171, 70);
   color: black;
   overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
 }
 
 .Blue > #aboutCont{
@@ -87,6 +115,8 @@
   background-color: rgb(33, 212, 215);
   color: white;
   overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
 }
 
 .Red > #aboutCont{
@@ -94,6 +124,8 @@
   background-color: rgb(208, 32, 32);
   color: black;
   overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
 }
 
 .Yellow > #aboutCont{
@@ -101,6 +133,8 @@
   background-color: rgb(228, 207, 47);
   color: black;
   overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
 }
 
 .Tan >#aboutCont{
@@ -108,6 +142,8 @@
   background-color: rgb(228, 191, 128);
   color: black;
   overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
 }
 
 .Purple >#aboutCont{
@@ -115,6 +151,8 @@
   background-color: rgb(154, 89, 211);
   color: black;
   overflow-y: scroll;
+  grid-column: 1 / 2;
+  padding: 1rem;
 }
 
 .switch {
@@ -174,17 +212,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-#appCont {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 2fr;
-  /* border: solid 5px black; */
-  /* margin: 0.5rem; */
-  /* background-color: aqua; */
 }
 
 #projectCont {
