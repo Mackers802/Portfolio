@@ -1,26 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function About(props) {
-  const {contact, person, liIcon, gitHub, resume
+  const {contact, person, liIcon, gitHub, resume, theme2, toggleDarkLight, changeColor, theme
     // briefcase, javascript, css, html, react, es6, git, node, mongoDb, axios, express, 
   } = props
 
-  const initState = "light"
-const [theme, settheme] = useState(initState)
-
-function toggleDarkLight(e){
-  if(theme === "Light"){
-    settheme(theme? "Dark" : "Light")
-  } else if (theme === "Dark"){
-    settheme(theme? "Light" : "Dark")
-  } else settheme("Dark")
-}  
-function changeColor(e){
-    settheme(e.target.value)
-}
-
   return (
-    <div className={theme}>
+    <div className={theme2}>
       <div className="aboutCont">
         <h1>MacKenzie Yandow</h1>
       <div className="headshot">
@@ -63,13 +49,12 @@ function changeColor(e){
           >
             <h1>{gitHub} Github</h1>
           </a>
-          {/* <h1>{briefcase} Projects</h1> */}
           <h1>{contact} Contact</h1>
           <div id="toggle">
-            <h3>Dark Mode</h3>
+            <h3>{theme} Mode</h3>
             <label className="switch">
               <input type="checkbox" onClick={toggleDarkLight} />
-            <span className="slider round" style={{backgroundColor: {theme}}}></span>
+            <span className="slider round"></span>
             </label>
           </div>
        <div id="settingTab">

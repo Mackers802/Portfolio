@@ -34,12 +34,12 @@
   margin: .2rem;
 }
 
-.Light > .aboutCont{
+.Light > .appCont{
   background-color: rgb(255, 255, 255);
   color: black;
 }
 
-.Dark > .aboutCont{
+.Dark > .appCont{
   background-color: rgb(0, 0, 0);
   color: white;
 }

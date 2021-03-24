@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "./Components/About.js";
 import Projects from "./Components/Projects.js";
 import "./App.css";
@@ -22,8 +22,35 @@ function App(props) {
   const contact = <FontAwesomeIcon icon={faAddressCard}/>
   const briefcase = <FontAwesomeIcon icon={faBriefcase}/>
 
+  const initState = "Light"
+  const [theme, setTheme] = useState(initState)
+  const [theme2, setTheme2 ] = useState()
+
+function toggleDarkLight(e){
+  if(theme === "Light"){
+    setTheme("Dark")
+    setTheme2("Light")
+  } else if (theme === "Dark"){
+    setTheme("Light")
+    setTheme2("Dark")
+  } else {
+    setTheme(e.target.value)
+  }
+} 
+
+function changeColor(e){
+  if(theme === "Light"){
+    setTheme("Light")
+    setTheme2(e.target.value)
+  } else if (theme === "Dark"){
+    setTheme("Dark")
+    setTheme2(e.target.value)
+  }
+}
+
   return (
-    <div className="appCont">
+    <div className={theme}>
+      <div className="appCont">
           <About
             briefcase={briefcase} 
             contact={contact} 
@@ -37,6 +64,10 @@ function App(props) {
             git={git} 
             node={node} 
             mongoDb={mongoDb}
+            toggleDarkLight={toggleDarkLight}
+            changeColor={changeColor}
+            theme={theme}
+            theme2={theme2}
           />
           <Projects 
             gitHub={gitHub} 
@@ -49,7 +80,7 @@ function App(props) {
             mongoDb={mongoDb}
           />
       </div>
-    // </div>
+    </div>
   );
 }
 
