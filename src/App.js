@@ -80,7 +80,6 @@ console.log("app theme", theme)
             git={git} 
             node={node} 
             mongoDb={mongoDb}
-            theme={theme}
           />
       </div>
     </div>

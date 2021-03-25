@@ -1,14 +1,21 @@
 import React from "react";
 
 export default function Projects(props) {
-  const { javascript, css, html, react, gitHub, git, node/*mongoDb*/ } = props;
+  const { javascript, css, html, react, gitHub, git, node /*mongoDb*/ } = props;
+  
   return (
+
     <div id="projectCont">
       <h1>Projects</h1>
-      <h2 >Designed using 
-        <br></br>
-        {javascript}, {react}, {css}, {git}, {gitHub}, {node}
-      </h2>
+      <h1>Designed using </h1>
+        <div className="icons">
+          <h2 style={{color: "#f0db4f"}}><h5>Javascript</h5> {javascript}</h2>
+          <h2 style={{color: "#61DBFB"}}><h5>React</h5>{react}</h2>
+          <h2 style={{color: "#0098FF"}}><h5>CSS</h5> {css}</h2>
+          <h2 style={{color: "#9CDAF1"}}><h5>Git</h5>{git}</h2>
+          <h2 style={{color: "#F4CBB2"}}><h5>Github</h5>{gitHub}</h2>
+          <h2 style={{color: "#68A063"}}><h5>Node</h5>{node}</h2>
+        </div>
       <div className="scroll">
         <a href="https://memeitup.netlify.app/">
           <iframe src="https://memeitup.netlify.app/" title="Meme Gen"></iframe>
@@ -22,8 +29,13 @@ export default function Projects(props) {
         <br></br>
         <hr></hr>
         <h2>Designed using 
-          <br></br>
-          {javascript}, {html}, {css}, {gitHub}
+        <div className="icons">
+          <h2 style={{color: "#f0db4f"}}><h5>Javascript</h5>{javascript}</h2>
+          <h2 style={{color: "#f06529"}}><h5>Html</h5>{html}</h2>
+          <h2 style={{color: "#0098FF"}}><h5>SS</h5>{css}</h2>
+          <h2 style={{color: "#9CDAF1"}}><h5>Git</h5>{git}</h2>
+          <h2 style={{color: "#F4CBB2"}}><h5>Github</h5>{gitHub}</h2>
+        </div>
         </h2>
         <a href="https://mariopestcontrol.netlify.app/">
           <iframe
