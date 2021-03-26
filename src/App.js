@@ -23,7 +23,7 @@ function App(props) {
   const briefcase = <FontAwesomeIcon icon={faBriefcase}/>
 
   const initState = "Light"
-  const initState2 = "Grey"
+  const initState2 = "grey"
   const [theme, setTheme] = useState(initState)
   const [theme2, setTheme2 ] = useState(initState2)
 
@@ -48,7 +48,6 @@ function changeColor(e){
     setTheme2(e.target.value)
   }
 }
-console.log("app theme", theme)
 
   return (
     <div className={theme}>
@@ -63,7 +62,7 @@ console.log("app theme", theme)
             javascript={javascript} 
             css={css} html={html} 
             react={react} 
-            git={git} 
+            git={git}
             node={node} 
             mongoDb={mongoDb}
             toggleDarkLight={toggleDarkLight}

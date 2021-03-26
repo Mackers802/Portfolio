@@ -1,11 +1,11 @@
 import React from "react";
 
 export default function About(props) {
-  const {contact, person, liIcon, gitHub, resume, theme2, toggleDarkLight, changeColor, theme
+  const {/* contact, */ person, liIcon, gitHub, resume, theme2, toggleDarkLight, changeColor, theme
     // briefcase, javascript, css, html, react, es6, git, node, mongoDb, axios, express, 
   } = props
-console.log("t2", theme2)
-console.log("t1", theme)
+// console.log("t2", theme2)
+// console.log("t1", theme)
   return (
     <div className={theme2}>
       <div id="aboutCont">
@@ -14,8 +14,8 @@ console.log("t1", theme)
         <img src="./images/portfolio-headshot.jpg" alt="headshot" width="100" height="100"></img>
       </div>
         <h2>{person} About Me</h2>
-          <p>
-            I am a Full-Stack Developer whos aim is to keep
+          <p style={{paddingBottom: "10px"}}>
+            I am a Full-Stack Software Developer whos aim is to keep
             website developement simplistic, concise and to the point. I belive
             that a website is more powerful when it is simple and easy to
             navigate. 
@@ -50,7 +50,10 @@ console.log("t1", theme)
           >
             <h1>{gitHub} Github</h1>
           </a>
-          <h1>{contact} Contact</h1>
+          <br></br>
+          <hr></hr>
+          <br></br>
+          {/* <h1>{contact} Contact</h1> */}
           <div id="toggle">
             <h3>{theme} Mode</h3>
             <label className="switch">
@@ -60,14 +63,14 @@ console.log("t1", theme)
           </div>
        {/* <div id="settingTab"> */}
      <div className="colorChoice">
-     <button className="colorButton" onClick={changeColor} value="Grey" style={{backgroundColor: "rgb(187, 187, 187)"}}></button>
-     <button className="colorButton" onClick={changeColor} value="Orange" style={{backgroundColor: "rgb(247, 124, 75)"}}></button>
-     <button className="colorButton" onClick={changeColor} value="Red" style={{backgroundColor: "rgb(208, 32, 32)"}}></button>
-     <button className="colorButton" onClick={changeColor} value="Blue" style={{backgroundColor: "rgb(33, 212, 215)"}}></button>
-     <button className="colorButton" onClick={changeColor} value="Green" style={{backgroundColor: "rgb(95, 171, 70)"}}></button>
-     <button className="colorButton" onClick={changeColor} value="Yellow" style={{backgroundColor: "rgb(228, 207, 47)"}}></button>
-     <button className="colorButton" onClick={changeColor} value="Tan" style={{backgroundColor: "rgb(228, 191, 128)"}}></button>
-     <button className="colorButton" onClick={changeColor} value="Purple" style={{backgroundColor: "rgb(154, 89, 211)"}}></button>
+      <button className="colorButton" onClick={changeColor} value="grey" style={{backgroundColor: "rgb(187, 187, 187)"}}></button>
+      <button className="colorButton" onClick={changeColor} value="skyBlue" style={{backgroundColor: "#61DBFB"}}></button>
+      <button className="colorButton" onClick={changeColor} value="green" style={{backgroundColor: "#68A063"}}></button>
+      <button className="colorButton" onClick={changeColor} value="yellow" style={{backgroundColor: "#f0db4f"}}></button>
+      <button className="colorButton" onClick={changeColor} value="darkBlue" style={{backgroundColor: "#0098FF"}}></button>
+      <button className="colorButton" onClick={changeColor} value="orange" style={{backgroundColor: "#f06529"}}></button>
+      <button className="colorButton" onClick={changeColor} value="peach" style={{backgroundColor: "#F4CBB2"}}></button>
+      <button className="colorButton" onClick={changeColor} value="lightBlue" style={{backgroundColor: "#9CDAF1"}}></button>
      </div>
    </div> 
         </div>

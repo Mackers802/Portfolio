@@ -7,9 +7,8 @@ export default function Projects(props) {
 
     <div id="projectCont">
       <h1>Projects</h1>
-      <h1>Designed using </h1>
         <div className="icons">
-          <h2 style={{color: "#f0db4f"}}><h5>Javascript</h5> {javascript}</h2>
+          <h2 style={{color: "#f0db4f"}}><h5>Javascript</h5>{javascript}</h2>
           <h2 style={{color: "#61DBFB"}}><h5>React</h5>{react}</h2>
           <h2 style={{color: "#0098FF"}}><h5>CSS</h5> {css}</h2>
           <h2 style={{color: "#9CDAF1"}}><h5>Git</h5>{git}</h2>
@@ -26,17 +25,15 @@ export default function Projects(props) {
             title="Random Movie Reviewer"
           ></iframe>
         </a>
-        <br></br>
-        <hr></hr>
-        <h2>Designed using 
+        <hr className="hr"></hr>
+        <h2>Designed using</h2>
         <div className="icons">
           <h2 style={{color: "#f0db4f"}}><h5>Javascript</h5>{javascript}</h2>
           <h2 style={{color: "#f06529"}}><h5>Html</h5>{html}</h2>
-          <h2 style={{color: "#0098FF"}}><h5>SS</h5>{css}</h2>
+          <h2 style={{color: "#0098FF"}}><h5>CSS</h5>{css}</h2>
           <h2 style={{color: "#9CDAF1"}}><h5>Git</h5>{git}</h2>
           <h2 style={{color: "#F4CBB2"}}><h5>Github</h5>{gitHub}</h2>
         </div>
-        </h2>
         <a href="https://mariopestcontrol.netlify.app/">
           <iframe
             src="https://mariopestcontrol.netlify.app/"
