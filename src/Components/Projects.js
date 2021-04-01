@@ -26,7 +26,6 @@ export default function Projects(props) {
           ></iframe>
         </a>
         <hr className="hr"></hr>
-        <h2>Designed using</h2>
         <div className="icons">
           <h2 style={{color: "#f0db4f"}}><h5>Javascript</h5>{javascript}</h2>
           <h2 style={{color: "#f06529"}}><h5>Html</h5>{html}</h2>
