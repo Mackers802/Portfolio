@@ -3,6 +3,11 @@
   src: url(../src/fonts/PressStart2P-Regular.ttf) format('truetype');
 }
 
+@font-face{
+  font-family: nameFont;
+  src: url(../src/fonts/Cinzel-VariableFont_wght.ttf) format('truetype')
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -233,13 +238,14 @@ input:checked + .slider:before {
 
 
 #projectCont > h1 {
-  font-family: myHeaderFont;
+  font-family: myName;
   padding: 1rem 2rem;
   padding-top: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
+
 #projectCont > h2 {
-  font-family: myHeaderFont;
+  font-family: myName;
   font-size: 1rem;
   padding: 1rem;
 }
@@ -265,6 +271,7 @@ a > iframe{
 } */
 
 #aboutCont > h1 {
+  font-family: myName;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -298,6 +305,7 @@ a > iframe{
 }
 
 .icons {
+  font-family: myHeaderFont;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
