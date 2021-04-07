@@ -41,7 +41,7 @@ export default function About(props) {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://docs.google.com/document/d/1ekAtefMxgMPO0lTodqUzRN9NxHLoB9Ts/edit#"
+            href="https://docs.google.com/document/d/1ieuweFHaLAUekrQUaRFs7ic0gTboZ4FZ/edit"
           ><h1>{resume} Resume</h1></a>
           <a
             target="_blank"
